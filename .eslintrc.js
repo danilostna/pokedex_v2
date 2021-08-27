@@ -11,8 +11,21 @@ module.exports = {
     parser: 'babel-eslint',
   },
   rules: {
+    'arrow-parens':['error', 'as-needed', {requireForBlockBody: true}],
+    'import/no-extraneous-dependencies': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'prefer-destructuring': ['error', {
+      'object': true,
+      'array': false,
+    }],
+    'vue/max-attributes-per-line': ['error', {
+      'singleline': 3,
+      'multiline': {
+        'max': 1,
+        'allowFirsLine': false
+      }
+    }]
   },
   overrides: [
     {
