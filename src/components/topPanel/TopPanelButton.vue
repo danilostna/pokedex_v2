@@ -5,7 +5,7 @@
 <script>
 export default {
   name: 'TopPanelButton',
-}
+};
 </script>
 
 <style lang="scss" scoped>

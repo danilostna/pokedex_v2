@@ -21,7 +21,7 @@ export default {
     Divider,
     RightPanel,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

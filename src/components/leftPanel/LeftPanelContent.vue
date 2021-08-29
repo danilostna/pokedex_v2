@@ -12,7 +12,7 @@ export default {
   components: {
     List,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

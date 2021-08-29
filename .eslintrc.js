@@ -18,13 +18,6 @@ module.exports = {
     'prefer-destructuring': ['error', {
       'object': true,
       'array': false,
-    }],
-    'vue/max-attributes-per-line': ['error', {
-      'singleline': 3,
-      'multiline': {
-        'max': 1,
-        'allowFirsLine': false
-      }
     }]
   },
   overrides: [

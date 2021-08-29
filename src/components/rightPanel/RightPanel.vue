@@ -22,7 +22,7 @@ export default {
       isOpen: false,
     };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

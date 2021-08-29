@@ -13,7 +13,7 @@ export default {
     LeftPanelContent,
   },
 
-}
+};
 </script>
 
 <style lang="scss" scoped>
