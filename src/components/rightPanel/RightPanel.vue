@@ -70,5 +70,29 @@ export default {
         }
       }
     }
+
+    &--back {
+      display: flex;
+      justify-content: center;
+      backface-visibility: hidden;
+      cursor: pointer;
+
+      @media (min-width: $viewport-medium) {
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .back--triangle {
+        border-top: $triangle-size solid $triangle-color;
+        border-right: $triangle-size solid transparent;
+        border-left: $triangle-size solid transparent;
+
+        @media (min-width: $viewport-medium) {
+          border-top: $triangle-size solid transparent;
+          border-left: $triangle-size solid $triangle-color;
+          border-bottom: $triangle-size solid transparent;
+        }
+      }
+    }
   }
 </style>
