@@ -1,21 +1,26 @@
 <template>
   <div class="pokedex">
     <TopPanel />
-    <LeftPanel />
+    <LeftPanel class="pokedex--left"/>
     <Divider />
+    <RightPanel class="pokedex--right"/>
   </div>
 </template>
 
 <script>
 import TopPanel from './topPanel/TopPanel.vue';
 import LeftPanel from './leftPanel/LeftPanel.vue';
+import Divider from './divider/Divider.vue';
+import RightPanel from './rightPanel/RightPanel.vue';
 
 export default {
   name: 'Pokedex',
   components: {
     TopPanel,
     LeftPanel,
-  }
+    Divider,
+    RightPanel,
+  },
 }
 </script>
 
