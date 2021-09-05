@@ -29,4 +29,20 @@ export default {
     state.listHasError = false;
     state.searchHasError = false;
   },
+  // Adds to the pokedex only the searched pokemon
+  setPokemonSearched(pokemon) {
+    state.list = [pokemon];
+  },
+  // Informs that the search is happening
+  setIsSearching(flag) {
+    state.isSearching = flag;
+  },
+  // Informs that the search has been done
+  setIsPokemonSearch(flag) {
+    state.isPokemonSearch = flag;
+  },
+  // Informs that search got an error
+  setSearchHasError(flag) {
+    state.searchHasError = flag;
+  },
 };
