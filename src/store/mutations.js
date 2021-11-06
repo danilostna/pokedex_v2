@@ -28,6 +28,7 @@ export default {
     state.isPokemonSearch = false;
     state.listHasError = false;
     state.searchHasError = false;
+    state.pokemonId = null;
   },
   // Adds to the pokedex only the searched pokemon
   setPokemonSearched(pokemon) {
@@ -44,5 +45,10 @@ export default {
   // Informs that search got an error
   setSearchHasError(flag) {
     state.searchHasError = flag;
+  },
+  // Select Pokemon
+  setPokemonId(id = null) {
+    state.isPokemonSearch = false;
+    state.pokemonId = id;
   },
 };
